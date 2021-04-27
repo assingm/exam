@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Second Stage Exam</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" />
+    <link href="css/tooplate-chilling-cafe.css" rel="stylesheet" />
+    <link
+      href="css/tooplate-chilling-cafe.css"
+      rel="stylesheet"
+      media="print"
+    />
+    <!--
+Tooplate 2118 Chilling Cafe
+https://www.tooplate.com/view/2118-chilling-cafe
+-->
+  </head>
+  <body>
+    <div class="tm-container">
+      <div class="tm-text-white tm-page-header-container">
+        <h1 class="tm-page-header">IT Cafe</h1>
+      </div>
+      <div>
+        <ul class="navbar">
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+      <div class="tm-main-content">
+        <div id="tm-intro-img"></div>
+        <!-- Coffee Menu -->
+        <section class="tm-section">
+          <h2 class="tm-section-header">Coffee Menu</h2>
+          <div class="tm-responsive-table">
+            <table>
+              <tr class="tm-tr-header">
+                <th>&nbsp;</th>
+                <th>Hot</th>
+                <th>Iced</th>
+                <th>Blended</th>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Americano</td>
+                <td>$10</td>
+                <td>$15</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Cuppucino</td>
+                <td>$15</td>
+                <td>$18</td>
+                <td>$20</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Fresh Latte</td>
+                <td>$10</td>
+                <td>$18</td>
+                <td>$20</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+
+        <!-- Tea Menu -->
+
+        <!-- Special Items -->
+        <section class="tm-section">
+          <h2 class="tm-section-header">Special Items</h2>
+          <div class="tm-special-items">
+            <figure class="tm-special-item">
+              <img
+                src="img/chilling-cafe-11.jpg"
+                alt="Image"
+                class="tm-special-item-img"
+              />
+              <figcaption>
+                <span class="tm-item-name">Soft Deli Cup</span>
+                <span class="tm-item-price">$25</span>
+              </figcaption>
+            </figure>
+            <figure class="tm-special-item">
+              <img
+                src="img/chilling-cafe-12.jpg"
+                alt="Image"
+                class="tm-special-item-img"
+              />
+              <figcaption>
+                <span class="tm-item-name">Coffee Art</span>
+                <span class="tm-item-price">$30</span>
+              </figcaption>
+            </figure>
+            <figure class="tm-special-item">
+              <img
+                src="img/chilling-cafe-13.jpg"
+                alt="Image"
+                class="tm-special-item-img"
+              />
+              <figcaption>
+                <span class="tm-item-name">Speciality Tea</span>
+                <span class="tm-item-price">$35</span>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+        <hr />
+
+        <!-- Talk to us -->
+        <section class="tm-section tm-section-small">
+          <h2 class="tm-section-header">Talk to us</h2>
+          <p class="tm-mb-0">
+            Reach us via
+            <a href="mailto:info@example.com" class="tm-contact-link">Email</a>
+            or follow us on social icons below. Thank you.
+          </p>
+        </section>
+      </div>
+      <footer>
+        <p class="tm-text-white tm-footer-text">
+          Copyright &copy; 2020 Company Name . Design:
+          <a href="https://www.tooplate.com" class="tm-footer-link">Tooplate</a>
+        </p>
+      </footer>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+      $(function () {
+        // Adjust intro image height based on width.
+        $(window).resize(function () {
+          var img = $("#tm-intro-img");
+          var imgWidth = img.width();
+
+          // 640x425 ratio
+          var imgHeight = (imgWidth * 425) / 640;
+
+          if (imgHeight < 300) {
+            imgHeight = 300;
+          }
+
+          img.css("min-height", imgHeight + "px");
+        });
+      });
+    </script>
+  </body>
+</html>
